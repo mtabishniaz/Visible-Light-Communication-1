@@ -18,7 +18,7 @@ load testLinEq.mat;
 
 %-------------------------Adaptive Filtering Parameters--------------------
 M = 4;
-numberOfSymbols = 400;
+numberOfSymbols = 40000;
 numberOfBits = log2(M);
 
 blockLength = numberOfSymbols*numberOfBits;
@@ -89,7 +89,7 @@ for index = 1:length(modulationIndexVector)
     if modulationIndex > maxModulationIndex
         warning('Modulation Index may cause undesired nonlinear effects')
     end
-LEDfreqRespPoints = 1000;
+    LEDfreqRespPoints = 1000;
 
     maxVoltage = VDC*(1+modulationIndex);
     deltaV = maxVoltage - VDC;

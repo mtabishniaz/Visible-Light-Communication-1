@@ -15,7 +15,7 @@ load whiteLED_334-15.mat;
 numberOfBits = 2;
 N = 12;
 maxRuns = 15000;
-maxIt = 100;
+maxIt = 1000;
 mu = 0.8;
 gamma = 1e-12;
 SNR = 30;

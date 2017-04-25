@@ -18,7 +18,7 @@ load testDFEVolterraEq.mat;
 %-------------------------Adaptive Filtering Parameters--------------------
 
 M = 4;
-numberOfSymbols = 400;
+numberOfSymbols = 40000;
 numberOfBits = log2(M);
 
 blockLength = numberOfSymbols*numberOfBits;
